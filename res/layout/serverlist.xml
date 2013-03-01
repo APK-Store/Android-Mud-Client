@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.liquid.telnet.client"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="none" android:orientation="vertical">
+	
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:orientation="vertical"
+              android:layout_width="fill_parent" android:layout_height="wrap_content">
+  <com.google.ads.AdView android:id="@+id/adView"
+                         ads:adUnitId="a14e690783d8ac0"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal"/>
+</FrameLayout>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:layout_width="wrap_content">
+
+<ListView android:layout_height="wrap_content" android:id="@+id/ListView01" android:layout_width="wrap_content" android:choiceMode="singleChoice" android:textFilterEnabled="true"></ListView>
+
+</RelativeLayout>
+
+</LinearLayout>
